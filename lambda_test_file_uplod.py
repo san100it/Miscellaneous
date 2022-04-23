@@ -44,7 +44,7 @@ def lambda_handler(event, context):
             key1 = object.key
             sourceObject = { 'Bucket' : 'source-test-sachin', 'Key': object.key}
             destObject = { 'Bucket' : 'destiation-test-sachin', 'Key': object.key}
-            s3_resource.meta.client.copy(sourceObject, 'destiation-test-sachin',key1)
+            s3_resource.meta.client.copy(sourceObject, 'destiation-test',key1)
         
             
         totalCount += 1
